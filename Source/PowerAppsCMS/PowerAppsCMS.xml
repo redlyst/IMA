@@ -1386,6 +1386,21 @@
             <param name="userName"></param>
             <returns></returns>
         </member>
+        <member name="T:PowerAppsCMS.Controllers.SwaggerITController">
+            <summary>
+            Controller untuk mendapatkan user
+            </summary>
+        </member>
+        <member name="M:PowerAppsCMS.Controllers.SwaggerITController.GetGroupLeaderProductionPlanningIT(System.Int32,System.Int32)">
+            <summary>
+            Mengambil daftar operator yang masih aktif
+            </summary>
+            <returns>Daftar operator yang masih aktif</returns>
+            <summary>
+            Mengambil daftar operator PB
+            </summary>
+            <returns>Daftar operator PB</returns>
+        </member>
         <member name="T:PowerAppsCMS.Controllers.SwaggerOperatorController">
             <summary>
             Controller yang berisikan fungsi-fungsi yang digunakan dihalaman Operator
@@ -2449,6 +2464,9 @@
             ID produk
             </summary>
         </member>
+        <member name="P:PowerAppsCMS.Models.ProductionPlanning.StatusProcess">
+            ID Product Group
+        </member>
         <member name="T:PowerAppsCMS.Models.ProductionPlanningUnitDetail">
             <summary>
             Model yang digunakan untuk menyimpan daftar proses dari unit yang dipilih pada halaman group leaders
@@ -2619,6 +2637,11 @@
         <member name="T:PowerAppsCMS.Models.UserModel">
             <summary>
             Class model yang menyimpan informasi user powerapps
+            </summary>
+        </member>
+        <member name="P:PowerAppsCMS.Models.UserModel.LoginStatus">
+            <summary>
+             Login Status, 0 is Failed, 1 is Success
             </summary>
         </member>
         <member name="P:PowerAppsCMS.Models.UserModel.ID">

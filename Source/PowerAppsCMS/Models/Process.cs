@@ -11,7 +11,7 @@ namespace PowerAppsCMS.Models
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Process
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,7 +21,7 @@ namespace PowerAppsCMS.Models
             this.ProcessAssigns = new HashSet<ProcessAssign>();
             this.ChangeQCStatusLog = new HashSet<ChangeQCStatusLog>();
         }
-    
+
         public int ID { get; set; }
         public int UnitID { get; set; }
         public int MasterProcessID { get; set; }
@@ -34,7 +34,7 @@ namespace PowerAppsCMS.Models
         public string CreatedBy { get; set; }
         public System.DateTime LastModified { get; set; }
         public string LastModifiedBy { get; set; }
-    
+
         public virtual MasterProcess MasterProcess { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProcessIssue> ProcessIssues { get; set; }
