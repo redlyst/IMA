@@ -11,15 +11,20 @@ namespace PowerAppsCMS.Models
     public class UserModel
     {
         /// <summary>
+        ///  Login Status, 0 is Failed, 1 is Success
+        /// </summary>
+        public int LoginStatus { get; set; }
+
+        /// <summary>
         /// ID user
         /// </summary>
-        public Guid ID { get; set; }        
+        public Guid ID { get; set; }
 
         /// <summary>
         /// Nama user
         /// </summary>
-        public string Name { get; set; }   
-        
+        public string Name { get; set; }
+
         /// <summary>
         /// NRP user
         /// </summary>
@@ -33,8 +38,8 @@ namespace PowerAppsCMS.Models
         /// <summary>
         /// ID grup proses dari group leader
         /// </summary>
-        public Nullable<int> ProcessGroupID { get; set; }       
-        
+        public Nullable<int> ProcessGroupID { get; set; }
+
         /// <summary>
         /// ID parent dari user
         /// </summary>
@@ -43,7 +48,7 @@ namespace PowerAppsCMS.Models
         /// <summary>
         /// Email user
         /// </summary>
-        public string Email { get; set; }        
+        public string Email { get; set; }
 
         /// <summary>
         /// Status user

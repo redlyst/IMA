@@ -238,6 +238,7 @@
     <Compile Include="Controllers\SwaggerGetUserController.cs" />
     <Compile Include="Controllers\SwaggerGroupLeaderController.cs" />
     <Compile Include="Controllers\SwaggerInspectorController.cs" />
+    <Compile Include="Controllers\SwaggerITController.cs" />
     <Compile Include="Controllers\SwaggerListAssignedUserController.cs" />
     <Compile Include="Controllers\SwaggerOperatorController.cs" />
     <Compile Include="Controllers\SwaggerPBPlanningController.cs" />
